@@ -68,4 +68,13 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+  # install for octave 4.0
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   sudo apt-add-repository ppa:octave/stable
+  #   sudo apt-get update
+  #   sudo apt-get install -y octave 
+  # SHELL
+  #
+  #
+  config.vm.provision "docker"
 end
